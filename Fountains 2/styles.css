@@ -11,4 +11,18 @@ p {
 body {
     background-color: rgb(19, 0, 19);
     color: white;
+    text-align: center;
+}
+
+a {
+    color: red;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: gray;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
 }
