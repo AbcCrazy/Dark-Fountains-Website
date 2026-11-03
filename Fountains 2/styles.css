@@ -26,3 +26,13 @@ blockquote {
     padding: 5px;
     display: inline-block;
 }
+
+.kris {
+    box-shadow: 0 0 20px 5px rgba(14, 90, 255, 0.5);
+}
+.susie {
+    box-shadow: 0 0 20px 5px rgba(147, 14, 255, 0.5);
+}
+.ralsei {
+    box-shadow: 0 0 20px 5px rgba(62, 255, 14, 0.5);
+}
