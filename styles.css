@@ -63,3 +63,27 @@ summary {
 .disclaimer {
     font-size: 12px;
 }
+
+.topbar {
+    display: flex;
+    background-color: rgba(162, 0, 255, 0.525);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.item {
+    flex: 1;
+    padding: 5px;
+    border-radius: 10px;
+    /* background-color: rgb(122, 0, 0); */
+}
+
+@media (hover: hover) {
+    .item:hover {
+        background-color: rgb(162, 0, 255);
+    }
+}
