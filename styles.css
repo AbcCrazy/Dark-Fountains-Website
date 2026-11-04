@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(19, 0, 19);
+    background-color: rgb(25, 0, 25);
     color: white;
     text-align: center;
 }
@@ -46,4 +46,15 @@ h1 {
 p {
     max-width: 70ch;
     margin-inline: auto;
+}
+
+details {
+    background-color: rgb(42, 0, 42);
+    max-width: 50ch;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.disclaimer {
+    font-size: 12px;
 }
