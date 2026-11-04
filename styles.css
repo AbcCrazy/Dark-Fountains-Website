@@ -63,3 +63,11 @@ summary {
 .disclaimer {
     font-size: 12px;
 }
+
+.useful_links {
+    background-color: rgb(60, 0, 60);
+    margin-inline: auto;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+}
