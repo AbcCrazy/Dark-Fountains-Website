@@ -55,6 +55,11 @@ details {
     margin-inline: auto;
 }
 
+summary {
+    background-color: rgb(60, 0, 60);
+    border-radius: 10px;
+}
+
 .disclaimer {
     font-size: 12px;
 }
