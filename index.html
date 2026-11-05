@@ -6,6 +6,7 @@
     <title>Dark Fountains</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div class="topbar">
@@ -56,5 +57,12 @@
         <p>What are we about?</p>
     </a> -->
     <p class="disclaimer">Disclaimer: This is an unofficial, fanmade parody website. All characters belong to their creator, Toby Fox</p>
+    <script type="text/javascript">
+        if("serviceWorker" in navigator){
+            navigator.serviceWorker.register("/service-worker.js")
+            .then(()=>console.log("Service worker registered!"))
+            .catch((error)=>console.log("Service worker failed!",error));
+        }
+    </script>
 </body>
 </html>
