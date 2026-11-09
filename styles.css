@@ -3,6 +3,7 @@ body {
     color: white;
     text-align: center;
     padding-top: 40px;
+    list-style-position: inside;
 }
 
 a {
@@ -110,4 +111,12 @@ section {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.checkoutButton {
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgb(135, 255, 131);
+    font-size: 16px;
+    padding: 5px;
 }
