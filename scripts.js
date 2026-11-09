@@ -8,6 +8,7 @@ servicesOrderFountainButton.addEventListener("click", function() {
     shoppingCart.push("Dark Fountain");
     fountainsOrdered++;
     console.log(`Shopping cart: ${shoppingCart.join(", ")}`);
+    cartNameHeader.innerText = "Cart: (" + String(shoppingCart.length) + ")"
     const shownCart = document.createElement("li");
     shownCart.textContent = "Dark Fountain";
     list.appendChild(shownCart);
@@ -22,9 +23,10 @@ checkoutButton.addEventListener("click", function() {
         const date = new Date();
         date.setDate(date.getDate() + 5);
         const eta = date.toDateString();
-        alert("Thank you for shopping with Roaring Industries. Your order will arrive: " + eta);
+        alert("Thank you for shopping with Roaring Industries. Your order will arrive on " + eta);
         shoppingCart = []
         list.replaceChildren()
+        cartNameHeader.innerText = "Cart:"
     }
 });
 
