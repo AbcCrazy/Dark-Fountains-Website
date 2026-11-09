@@ -68,6 +68,9 @@ summary {
 
 .topbar {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
     background-color: rgba(162, 0, 255, 0.525);
     position: fixed;
     width: 100%;
@@ -103,4 +106,8 @@ section {
     margin: 0px auto;
     padding: 2px;
     margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
