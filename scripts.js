@@ -5,13 +5,17 @@ let fountainsOrdered = 0;
 let shoppingCart = []
 
 servicesOrderFountainButton.addEventListener("click", function() {
+    list.replaceChildren()
     shoppingCart.push("Dark Fountain");
     fountainsOrdered++;
     console.log(`Shopping cart: ${shoppingCart.join(", ")}`);
+    for (const item of shoppingCart) {
+        const shownCart = document.createElement("li");
+        shownCart.textContent = "Dark Fountain";
+        list.appendChild(shownCart);
+    }
+    
     cartNameHeader.innerText = "Cart: (" + String(shoppingCart.length) + ")"
-    const shownCart = document.createElement("li");
-    shownCart.textContent = "Dark Fountain";
-    list.appendChild(shownCart);
 });
 
 const checkoutButton = document.getElementById("checkoutButton");
